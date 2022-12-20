@@ -7,7 +7,7 @@ let Obj = {
     u: "ufat"
 };
 
-function criptografar() {
+function codificar() {
     let texto_entrada = document.getElementById("texto_de_entrada").value;
     let texto_saida = document.getElementById("texto_de_saida").innerHTML = texto_de_saida
     let RE = new RegExp(Object.keys(Obj).join("|"), "gi");
@@ -25,7 +25,7 @@ let Obj2 = {
     ufat: "u"
 };
 
-function descriptografar() {
+function decodificar() {
     let texto_entrada = document.getElementById("texto_de_entrada").value;
     let texto_saida = document.getElementById("texto_de_saida").innerHTML = texto_de_saida
     let RE = new RegExp(Object.keys(Obj2).join("|"), "gi");
