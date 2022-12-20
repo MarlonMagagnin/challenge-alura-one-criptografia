@@ -1,0 +1,98 @@
+body {
+    /*background-image: url(./imagens/cyber-security-g42f38f0d5_640.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;*/
+    background-image: linear-gradient(#F0FFF0, #E0EEE0, #B0E0E6);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: block;
+
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    color: darkblue;
+    margin: 30px 0 30px 0;
+}
+
+textarea {
+    margin: 20px 0 20px 0;
+    padding: 10px 25px;
+    width: 25%;
+}
+
+label {
+    font-size: 1em;
+    font-style: italic;
+    color: black;
+}
+
+button {
+    width: auto;
+    padding: 15px 15px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s all;
+    margin: 0 0 10px 20px;
+}
+
+button:hover {
+    background-color: darkblue;
+    transform: scale(1.2);
+}
+
+footer {
+    text-align: center;
+    font-size: 1em;
+    margin: 30px 0 0 0;
+    color: white;
+    padding: 30px 0 30px 0;
+    background-color: #7B68EE;
+}
+
+footer a:link {
+    text-decoration: none;
+}
+
+footer a img {
+    width: 50px;
+    margin: 20px 0 0 20px;
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .container {
+        flex-direction: column
+    }
+
+    button {
+        width: auto;
+        flex-direction: column;
+        padding: auto;
+        font-size: 0.75em;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    button {
+        width: auto;
+        font-size: 0.75em;
+    }
+}
