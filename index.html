@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imagens/criptografar.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Criptografia</title>
+</head>
+
+<body>
+    <h1>Bem-vindo</h1>
+    <div class="container">
+        <label for="texto">Qual o seu texto?</label><br>
+        <textarea name="texto" id="texto_de_entrada" cols="50" rows="10" placeholder="Digite seu texto." maxlength="200"></textarea><br>
+
+        <button onclick="criptografar()">CRIPTOGRAFAR</button> 
+        <button onclick="descriptografar()">DESCRIPTOGRAFAR</button> <br>
+
+        <!--button onclick="recarregarAPagina()">Atualizar</button>-->
+
+        <label for="criptografado">Sua resposta..</label><br>
+        <textarea name="criptografado" id="texto_de_saida" cols="50" rows="10" placeholder="Seu texto criptografado.."></textarea><br>
+        <button onclick="copiarTexto()">Copiar para área de transferência</button>
+    </div>
+    <!--Rodapé-->
+    <footer>
+        &copy;Marlon Magagnin - Todos os direitos reservados - 2022 <br>
+        <a href="https://github.com/MarlonMagagnin" target="_blank">
+            <img src="./imagens/icons8-github-50.png"  alt="icone-github"> 
+        </a>
+        <a href="https://www.linkedin.com/in/marlon-jos%C3%A9-magagnin/" target="_blank">
+            <img src="./imagens/linkedin.png" alt="icone-linkedin">
+        </a>
+        
+    </footer>
+    <!--Script com as funções JavaScript-->
+    <script src="./funcoes.js"></script>
+</body>
+
+</html>
