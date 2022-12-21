@@ -1,4 +1,9 @@
-
+//TRANSFORMANDO AS LETRAS EM MINUSCULAS
+function transformarLetras(){
+    let x = document.getElementById("texto_de_entrada");
+    x.value = x.value.toLowerCase();
+}
+//LISTA DAS PALAVRAS CHAVES QUE DEVEM SER TROCADAS
 let Obj = {
     e: "enter",
     i: "imes",
@@ -6,7 +11,7 @@ let Obj = {
     o: "ober",
     u: "ufat"
 };
-
+//FUNCAO DE CODIFICAR FAZENDO A TROCAS DAS PALAVRAS
 function codificar() {
     let texto_entrada = document.getElementById("texto_de_entrada").value;
     let texto_saida = document.getElementById("texto_de_saida").innerHTML = texto_de_saida
@@ -16,7 +21,7 @@ function codificar() {
     });
 
 };
-
+//LISTA COM AS LETRAS PARA A DECODIFICACAO
 let Obj2 = {
     enter: "e",
     imes: "i",
@@ -24,7 +29,7 @@ let Obj2 = {
     ober: "o",
     ufat: "u"
 };
-
+//FUNCAO PARA DECODIFICAR O TEXTO
 function decodificar() {
     let texto_entrada = document.getElementById("texto_de_entrada").value;
     let texto_saida = document.getElementById("texto_de_saida").innerHTML = texto_de_saida
@@ -40,7 +45,7 @@ function decodificar() {
 function recarregarAPagina(){
     window.location.reload(true);
 }*/
-
+//BOTAO PARA COPIAR O TEXTO QUE ESTÁ CODIFICADO OU DECODIFICADO
 function copiarTexto() {
     let textoCopiado = document.getElementById("texto_de_saida");
     textoCopiado.select();

@@ -16,7 +16,7 @@
     <h1>Bem-vindo</h1>
     <div class="container">
         <label for="texto">Qual o seu texto?</label><br>
-        <textarea name="texto" id="texto_de_entrada" cols="50" rows="10" placeholder="Digite seu texto." maxlength="200"></textarea><br>
+        <textarea onkeyup="transformarLetras()" name="texto" id="texto_de_entrada" cols="50" rows="10" placeholder="Digite seu texto." maxlength="200"></textarea><br>
 
         <button onclick="codificar()">CODIFICAR</button> 
         <button onclick="decodificar()">DECODIFICAR</button> <br>
