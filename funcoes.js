@@ -1,7 +1,7 @@
 //TRANSFORMANDO AS LETRAS EM MINUSCULAS
 function transformarLetras(){
-    let x = document.getElementById("texto_de_entrada");
-    x.value = x.value.toLowerCase();
+    let texto_de_entrada = document.getElementById("texto_de_entrada");
+    texto_de_entrada.value = texto_de_entrada.value.toLowerCase();
 }
 //LISTA DAS PALAVRAS CHAVES QUE DEVEM SER TROCADAS
 let Obj = {
@@ -45,7 +45,7 @@ function decodificar() {
 function recarregarAPagina(){
     window.location.reload(true);
 }*/
-//BOTAO PARA COPIAR O TEXTO QUE ESTÁ CODIFICADO OU DECODIFICADO
+//BOTAO PARA COPIAR O TEXTO QUE ESTÁ CODIFICADO
 function copiarTexto() {
     let textoCopiado = document.getElementById("texto_de_saida");
     textoCopiado.select();
