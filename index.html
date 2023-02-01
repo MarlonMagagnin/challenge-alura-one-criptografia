@@ -6,38 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./imagens/criptografar.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Codificador</title>
 </head>
 
 <body>
-    <h1>Bem-vindo</h1>
+    <h1>CODIFICADOR DE TEXTO</h1>
     <div class="container">
-        <label for="texto">Qual o seu texto?</label><br>
-        <p>&#8658;Apenas letras minusculas e sem acentos.</p>
-        <textarea onkeyup="transformarLetras()" name="texto" id="texto_de_entrada" cols="50" rows="10" placeholder="Digite seu texto." maxlength="200"></textarea><br>
-
-        <button onclick="codificar()">CODIFICAR</button> 
-        <button onclick="decodificar()">DECODIFICAR</button> <br>
-
-        <!--button onclick="recarregarAPagina()">Atualizar</button>-->
-
-        <label for="criptografado">Sua resposta..</label><br>
-        <textarea name="criptografado" id="texto_de_saida" cols="50" rows="10" placeholder="Seu texto codificado.."></textarea><br>
-        <button onclick="copiarTexto()">Copiar para área de transferência</button>
+        <div class="item">
+            <label for="texto">Texto para codificar</label><br>
+            <textarea onkeyup="transformarLetras()" name="texto" id="texto_de_entrada" cols="50" rows="10"
+                placeholder="Digite seu texto." maxlength="200"></textarea>
+              <p>&#8658;Apenas letras minusculas e sem acentos.</p><br>
+        </div>
+        <div class="item">
+            <label for="criptografado">Texto codificado</label><br>
+            <textarea name="criptografado" id="texto_de_saida" cols="50" rows="10"
+                placeholder="Texto codificado.."></textarea>
+        </div>
+        <div class="item">
+            <button onclick="codificar()">CODIFICAR</button>
+            <button onclick="decodificar()">DECODIFICAR</button>
+            <button onclick="copiarTexto()">COPIAR</button>
+            <button onclick="recarregarAPagina()">ATUALIZAR</button>
+        </div>
     </div>
     <!--Rodapé-->
     <footer>
         &copy;Marlon Magagnin - Todos os direitos reservados - 2022 <br>
         <a href="https://github.com/MarlonMagagnin" target="_blank">
-            <img src="./imagens/icons8-github-50.png"  alt="icone-github"> 
+            <img src="./imagens/icons8-github-50.png" alt="icone-github">
         </a>
         <a href="https://www.linkedin.com/in/marlon-jos%C3%A9-magagnin/" target="_blank">
             <img src="./imagens/linkedin.png" alt="icone-linkedin">
         </a>
-        
+
     </footer>
     <!--Script com as funções JavaScript-->
     <script src="./funcoes.js"></script>

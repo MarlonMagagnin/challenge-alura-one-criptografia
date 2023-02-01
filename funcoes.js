@@ -40,11 +40,10 @@ function decodificar() {
 
 }
 
-
-/* Tem uma funcionalidade a mais para recarregar a página.
+//Recarregar a página.
 function recarregarAPagina(){
     window.location.reload(true);
-}*/
+}
 //BOTAO PARA COPIAR O TEXTO QUE ESTÁ CODIFICADO
 function copiarTexto() {
     let textoCopiado = document.getElementById("texto_de_saida");

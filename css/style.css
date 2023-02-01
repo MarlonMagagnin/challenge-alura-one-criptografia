@@ -4,15 +4,21 @@ body {
     background-repeat: no-repeat;*/
     background-image: linear-gradient(#F0FFF0, #E0EEE0, #B0E0E6);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100%;
+    width: 100%;
 }
 
-.container {
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: block;
 
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+.item{
+    text-align: center;
+    justify-content: space-between;
+    margin: 0 100px 0 50px;
 }
 
 h1 {
@@ -24,12 +30,14 @@ h1 {
 }
 p{
     font-style: italic;
-    font-size: 12px;
+    font-size: 1em;
 }
 textarea {
     margin: 20px 0 20px 0;
+    border: none;
     padding: 10px 25px;
-    width: 25%;
+    width: 75%;
+    
 }
 
 label {
@@ -39,7 +47,7 @@ label {
 }
 
 button {
-    width: auto;
+    width: 200px;
     padding: 15px 15px;
     background-color: blue;
     color: white;
@@ -49,7 +57,7 @@ button {
     border-radius: 20px;
     cursor: pointer;
     transition: 1s all;
-    margin: 0 0 10px 20px;
+    margin: 0 0 40px 40px;
 }
 
 button:hover {
@@ -58,12 +66,15 @@ button:hover {
 }
 
 footer {
+   
     text-align: center;
     font-size: 1em;
     margin: 30px 0 0 0;
     color: white;
     padding: 30px 0 30px 0;
     background-color: #7B68EE;
+    width: 100%;
+    
 }
 
 footer a:link {
@@ -77,25 +88,34 @@ footer a img {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    h1{
+        font-size: 1.5em;
+    }
     .container {
         flex-direction: column
     }
+    .item{
+        margin: auto;
+    }
 
     button {
-        width: auto;
-        flex-direction: column;
-        padding: auto;
+        width: 200px;
         font-size: 0.75em;
     }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    h1{
+        font-size: 1.75em;
+    }
     .container {
         flex-direction: column;
     }
 
     button {
-        width: auto;
+        width: 200px;
         font-size: 0.75em;
     }
 }
